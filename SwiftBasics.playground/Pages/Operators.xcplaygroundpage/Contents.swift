@@ -27,6 +27,11 @@ let isPerfectMultiple = result == 0
 // Task 3 - evaluate for value
 let isGreater = someOperation >= anotherOperation
 
+// Unary joints
+
+// Enter your code below
+var initialScore = 8
+let totalScore = initialScore++
 
 
 //: [Next](@next)
