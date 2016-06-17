@@ -23,13 +23,83 @@ todo.insert("wake up!", atIndex: 0)
 todo.removeAtIndex(3)
 todo
 
+// Dealing with non-existent data
+
+
 // EXERCISE
 // Enter your code below
 var arrayOfInts: [Int] = [1,2,3,4,5,6]
 
 arrayOfInts.append(7)
 
-var anotherArray: [Int] = [8,9]
+arrayOfInts += [8]
 
-arrayOfInts += anotherArray
-arrayOfInts
+let value = arrayOfInts.removeAtIndex(3)
+
+////////////////////
+/// Dictionaries ///
+////////////////////
+
+/*
+        Airport Code        Airport Name
+        (Key)               (Value)
+        LGA                 Laguardia
+        LHR                 Heathrow
+*/
+
+var airportCodes: [String: String] = [
+    "LGA": "Laguardia",
+    "LHR": "Heathrow",
+    "JFK": "NYSmity"
+]
+
+// Read from a Dictionary
+
+airportCodes["LGA"]
+
+// Inserting Key Value Pairs
+
+airportCodes["SYD"] = "Sydney Airport"
+
+airportCodes.updateValue("Schiphol", forKey: "AMS")
+
+// Removing Key Value Pairs
+
+airportCodes["LGA"] = nil
+airportCodes.removeValueForKey("JFK")
+airportCodes
+
+// Dealing with non-existent data
+let orlandoAirport = airportCodes["MCO"]
+
+
+// Exercises
+var iceCream: [String: String] = [
+    "CC": "Chocolate Chip",
+    "AP": "Apple Pie",
+    "PB": "Peanut Butter",
+]
+
+iceCream["RR"] = "Rocky Road"
+
+let applePie = iceCream["AP"]
+
+applePie
+
+iceCream.updateValue("Chocolate Chip Cookie Dough", forKey: "CC")
+
+iceCream
+
+
+
+
+
+
+
+
+
+
+
+
+
+
